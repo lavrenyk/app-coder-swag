@@ -13,6 +13,11 @@
 		0FB5EC3B209A25CF00D84551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB5EC3A209A25CF00D84551 /* Assets.xcassets */; };
 		0FB5EC3E209A25CF00D84551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB5EC3C209A25CF00D84551 /* LaunchScreen.storyboard */; };
 		0FB5EC49209A5C0E00D84551 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5EC48209A5C0E00D84551 /* CategoryCell.swift */; };
+		0FB5EC4B209B195C00D84551 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5EC4A209B195C00D84551 /* Category.swift */; };
+		0FB5EC4E209B1B7E00D84551 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5EC4D209B1B7E00D84551 /* DataService.swift */; };
+		0FB5EC50209B785800D84551 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5EC4F209B785800D84551 /* ProductCell.swift */; };
+		0FB5EC52209B7B0000D84551 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5EC51209B7B0000D84551 /* Product.swift */; };
+		0FB5EC54209B838B00D84551 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5EC53209B838B00D84551 /* ProductsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0FB5EC3D209A25CF00D84551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FB5EC3F209A25CF00D84551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FB5EC48209A5C0E00D84551 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		0FB5EC4A209B195C00D84551 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0FB5EC4D209B1B7E00D84551 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0FB5EC4F209B785800D84551 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		0FB5EC51209B7B0000D84551 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0FB5EC53209B838B00D84551 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		0FB5EC32209A25CE00D84551 /* coder-swag */ = {
 			isa = PBXGroup;
 			children = (
+				0FB5EC4C209B1B5800D84551 /* Services */,
 				0FB5EC47209A5B9B00D84551 /* View */,
 				0FB5EC46209A5B4D00D84551 /* Model */,
 				0FB5EC45209A5B4300D84551 /* Controller */,
@@ -72,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0FB5EC35209A25CE00D84551 /* CategoriesVC.swift */,
+				0FB5EC53209B838B00D84551 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,6 +91,8 @@
 		0FB5EC46209A5B4D00D84551 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FB5EC4A209B195C00D84551 /* Category.swift */,
+				0FB5EC51209B7B0000D84551 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,8 +101,17 @@
 			isa = PBXGroup;
 			children = (
 				0FB5EC48209A5C0E00D84551 /* CategoryCell.swift */,
+				0FB5EC4F209B785800D84551 /* ProductCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0FB5EC4C209B1B5800D84551 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0FB5EC4D209B1B7E00D84551 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FB5EC54209B838B00D84551 /* ProductsVC.swift in Sources */,
 				0FB5EC36209A25CE00D84551 /* CategoriesVC.swift in Sources */,
 				0FB5EC34209A25CE00D84551 /* AppDelegate.swift in Sources */,
 				0FB5EC49209A5C0E00D84551 /* CategoryCell.swift in Sources */,
+				0FB5EC50209B785800D84551 /* ProductCell.swift in Sources */,
+				0FB5EC4B209B195C00D84551 /* Category.swift in Sources */,
+				0FB5EC4E209B1B7E00D84551 /* DataService.swift in Sources */,
+				0FB5EC52209B7B0000D84551 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
